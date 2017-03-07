@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Site da Banda Dinâminco</title>
+	<style>
+		p {
+			margin-bottom: -1px;
+		}
+
+		input {
+			width: 250px;
+			margin-top: -50px;
+		}
+	</style>
+</head>
+<body>
+	<form action="saida.php" method="POST">
+		<p>Nome da Banda:</p>
+		<input type='text' name='bandaNome'>
+
+		<p><i>Link</i> para Imagem:</p>
+		<input type='text' name='imgBanda'>
+
+		<p><b>Integrante 1:</b> - nome:</p>
+		<input type='text' name='integNome1'>
+
+		<p><b>Integrante 1:</b> - Data de Nascimento:</p>
+		<input type='date' name='integDtNacto1'>
+
+		<p><b>Integrante 1:</b> - Instrumento:</p>
+		<input type='text' name='integInstrumento1'>
+
+		<p><b>Integrante 2:</b> - nome:</p>
+		<input type='text' name='integNome2'>
+
+		<p><b>Integrante 2:</b> - Data de Nascimento:</p>
+		<input type='date' name='integDtNacto2'>
+
+		<p><b>Integrante 2:</b> - Instrumento:</p>
+		<input type='text' name='integInstrumento2'>
+
+		<p><b>Integrante 3:</b> - nome:</p>
+		<input type='text' name='integNome3'>
+
+		<p><b>Integrante 3:</b> - Data de Nascimento:</p>
+		<input type='date' name='integDtNacto3'>
+
+		<p><b>Integrante 3:</b> - Instrumento:</p>
+		<input type='text' name='integInstrumento3'>		
+
+		<input type="submit" value="Enviar!">
+	</form>
+</body>
+</html>
