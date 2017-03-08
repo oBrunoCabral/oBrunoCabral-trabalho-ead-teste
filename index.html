@@ -2,53 +2,86 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Site da Banda Dinâminco</title>
+	<title>Site da Banda Dinâmico</title>
 	<style>
 		p {
 			margin-bottom: -1px;
 		}
 
-		input {
-			width: 250px;
-			margin-top: -50px;
+		.princ {
+			display: block;
+		}
+
+		input, select {
+			width: 200px;
+			margin-bottom: 10px;
 		}
 	</style>
 </head>
 <body>
 	<form action="saida.php" method="POST">
-		<p>Nome da Banda:</p>
+		<label class = 'princ'>Nome da Banda:</label>
 		<input type='text' name='bandaNome'>
 
-		<p><i>Link</i> para Imagem:</p>
+		<label class = 'princ'><i>Link</i> para Imagem:</label>
 		<input type='text' name='imgBanda'>
 
-		<p><b>Integrante 1:</b> - nome:</p>
+		<label>Título da Imagem:</label>
+		<input type='text' name='imgTit'>
+
+		<label>Descrição da Imagem:</label>
+		<input type='text' name='imgDesc'>
+
+		<label class = 'princ'><b>Integrante 1:</b> - nome:</label>
 		<input type='text' name='integNome1'>
 
-		<p><b>Integrante 1:</b> - Data de Nascimento:</p>
+		<label class = 'princ'><b>Integrante 1:</b> - Data de Nascimento:</label>
 		<input type='date' name='integDtNacto1'>
 
-		<p><b>Integrante 1:</b> - Instrumento:</p>
+		<label class = 'princ'><b>Integrante 1:</b> - Instrumento:</label>
 		<input type='text' name='integInstrumento1'>
 
-		<p><b>Integrante 2:</b> - nome:</p>
+		<label class = 'princ'><b>Integrante 2:</b> - nome:</label>
 		<input type='text' name='integNome2'>
 
-		<p><b>Integrante 2:</b> - Data de Nascimento:</p>
+		<label class = 'princ'><b>Integrante 2:</b> - Data de Nascimento:</label>
 		<input type='date' name='integDtNacto2'>
 
-		<p><b>Integrante 2:</b> - Instrumento:</p>
+		<label class = 'princ'><b>Integrante 2:</b> - Instrumento:</label>
 		<input type='text' name='integInstrumento2'>
 
-		<p><b>Integrante 3:</b> - nome:</p>
+		<label class = 'princ'><b>Integrante 3:</b> - nome:</label>
 		<input type='text' name='integNome3'>
 
-		<p><b>Integrante 3:</b> - Data de Nascimento:</p>
+		<label class = 'princ'><b>Integrante 3:</b> - Data de Nascimento:</label>
 		<input type='date' name='integDtNacto3'>
 
-		<p><b>Integrante 3:</b> - Instrumento:</p>
-		<input type='text' name='integInstrumento3'>		
+		<label class = 'princ'><b>Integrante 3:</b> - Instrumento:</label>
+		<input type='text' name='integInstrumento3'>
 
+		<label class = 'princ'>Biografia da Banda:</label>		
+		<textarea cols='70' rows='10' name='biografiaBanda'></textarea>
+
+		<label class = 'princ'>Cor de Fundo da Página</label>
+		<select name='corDeFundo' size='1'>
+			<option value = 'blue'>Azul</option>
+			<option value = 'yellow'>Amarelo</option>
+			<option value = 'white' selected=''>Branco</option>
+			<option value = 'black'>Preto</option>
+			<option value = 'green'>Verde</option>
+			<option value = 'red'>Vermelho</option>
+		</select>
+
+		<label class = 'princ'>Cor do Texto da Página</label>
+		<select name='corTexto' size='1'>
+			<option value = 'blue'>Azul</option>
+			<option value = 'yellow'>Amarelo</option>
+			<option value = 'white'>Branco</option>
+			<option value = 'black' selected=''>Preto</option>
+			<option value = 'green'>Verde</option>
+			<option value = 'red'>Vermelho</option>
+		</select>
+		<br>
 		<input type="submit" value="Enviar!">
 	</form>
 </body>
