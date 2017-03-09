@@ -60,28 +60,33 @@
 			<tbody>
 				<tr>
 					<td> <?php echo $integranteNome1 = $_POST['integNome1'] ?> </td>
-					<td> <?php echo $integranteNasc1 = $_POST['integDtNacto1'] ?> </td>
+					<td> <?php $integranteNasc1 = new DateTime ($_POST['integDtNacto1']); echo date_format($integranteNasc1, 'd-m-Y'); ?> </td>
 					<td> <?php echo $integranteInst1 = $_POST['integInstrumento1'] ?> </td>			
 				</tr>
 
 				<tr>
 					<td> <?php echo $integranteNome1 = $_POST['integNome2'] ?> </td>
-					<td> <?php echo $integranteNasc1 = $_POST['integDtNacto2'] ?> </td>
+					<td> <?php $integranteNasc2 = new DateTime ($_POST['integDtNacto2']); echo date_format($integranteNasc2, 'd-m-Y'); ?> </td>
 					<td> <?php echo $integranteInst1 = $_POST['integInstrumento2'] ?> </td>			
 				</tr>
 
 				<tr>
 					<td> <?php echo $integranteNome1 = $_POST['integNome3'] ?> </td>
-					<td> <?php echo $integranteNasc1 = $_POST['integDtNacto3'] ?> </td>
+					<td> <?php $integranteNasc3 = new DateTime ($_POST['integDtNacto3']); echo date_format($integranteNasc3, 'd-m-Y'); ?> </td>
 					<td> <?php echo $integranteInst1 = $_POST['integInstrumento3'] ?> </td>			
 				</tr>				
-												
 			</tbody>
 		</table>
 
 	</div>
 </body>
 </html>
+
+<?php
+
+
+	//echo $integranteNasc1 = $_POST['integDtNacto1']
+?>
 
 <!--
 <?php
