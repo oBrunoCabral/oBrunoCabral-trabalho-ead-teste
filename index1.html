@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Site da Banda Dinâmico</title>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<!--css local-->
+	<style>
+		h4 {
+			text-align: center;
+		}
+
+		p {
+			margin-bottom: -1px;
+		}
+
+		.dtnacto {
+			padding-bottom: 10px;
+		}
+
+		.princ {
+			display: block;
+		}
+
+		input, select {
+			width: 200px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav>
+		    <div class="nav-wrapper blue-grey darken-4">
+		      <a href="#" class="brand-logo center ">Crie o Site da Banda</a>
+		    </div>
+	  	</nav>
+	</header>
+
+	<form class="container" action="saida.php" method="POST">
+		
+		<div class="row">
+				<div class="col s12">
+					<h4>Qual é o Nome da Banda?</h4>
+				</div>
+
+			<div class="input-field col s10 offset-s1">
+				<input type='text' name='bandaNome'>
+				<label class = 'princ'>Nome da Banda:</label>
+			</div>
+		</div>
+		
+		<div class="container imgDaBanda">
+			<div class="row">
+				<div class="col s12">
+					<h4>Foto da Banda</h4>
+				</div>
+
+				<div class="input-field col s4">
+					<input type='text' name='imgBanda'>
+					<label class = 'princ'><i>Link</i> para Imagem:</label>
+				</div>
+
+				<div class="input-field col s4">
+					<input type='text' name='imgTit'>
+					<label>Título da Imagem:</label>				
+				</div>
+
+				<div class="input-field col s4">
+					<input type='text' name='imgDesc'>
+					<label>Descrição da Imagem:</label>				
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h4>Informações do Integrante nº 1</h4>
+				</div>
+
+				<div class="input-field col s4">
+					<input type='text' name='integNome1'>
+					<label class = 'princ'><b>Integrante 1:</b> - nome:</label>				
+				</div>
+
+				<div class="input-field col s4">
+					<input type="date" name='integDtNacto1' class="datepicker">
+					<label class = 'princ'>Integrante 1: - Data de Nascimento:</label>			
+				</div>
+
+				<div class="input-field col s4">
+					<input type='text' name='integInstrumento1'>
+					<label class = 'princ'><b>Integrante 1:</b> - Instrumento:</label>
+				</div>
+			</div>
+        </div>	
+
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h4>Informações do Integrante nº 2</h4>
+				</div>
+
+				<div class="input-field col s4">
+					<input type='text' name='integNome2'>
+					<label class = 'princ'><b>Integrante 2:</b> - nome:</label>
+				</div>
+
+				<div class="input-field col s4">
+					<input type="date" name='integDtNacto2' class="datepicker">
+					<label class = 'princ'><b>Integrante 2:</b> - Data de Nascimento:</label>
+				</div>
+
+				<div class="input-field col s4">
+					<input type='text' name='integInstrumento2'>
+					<label class = 'princ'><b>Integrante 2:</b> - Instrumento:</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h4>Informações do Integrante nº 2</h4>
+				</div>
+
+				<div class="input-field col s4">
+					<input type='text' name='integNome3'>
+					<label class = 'princ'><b>Integrante 3:</b> - nome:</label>
+				</div>
+
+
+
+				<div class="input-field col s4">
+					<input type="date" name='integDtNacto3' class="datepicker">
+					<label class = 'princ'><b>Integrante 3:</b> - Data de Nascimento:</label>
+				</div>
+
+				<div class="input-field col s4">
+					<input type='text' name='integInstrumento3'>
+					<label class = 'princ'><b>Integrante 3:</b> - Instrumento:</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="input-field col s12">
+			<textarea cols='70' rows='10' name='biografiaBanda'></textarea>
+			<label class = 'princ'>Biografia da Banda:</label>				
+		</div>
+
+
+		<div class="row">
+			<div class="input-field col s6">
+				<select name='corDeFundo' size='1'>
+					<option value = 'white'>Branco</option>
+					<option value = 'yellow'>Amarelo</option>
+					<option value = 'blue'>Azul</option>
+					<option value = 'black'>Preto</option>
+					<option value = 'green'>Verde</option>
+					<option value = 'red'>Vermelho</option>
+				</select>
+				<label class = 'princ'>Cor de Fundo da Página</label>				
+			</div>
+			<div class="input-field col s6">
+				<select name='corTexto' size='1'>
+					<option value = 'black'>Preto</option>
+					<option value = 'yellow'>Amarelo</option>
+					<option value = 'white'>Branco</option>
+					<option value = 'blue'>Azul</option>
+					<option value = 'green'>Verde</option>
+					<option value = 'red'>Vermelho</option>
+				</select>
+				<label class = 'princ'>Cor do Texto da Página</label>
+				<br>
+			</div>
+
+		</div>
+
+		<div class="row">				
+				<input class="col s12 btn-large blue-grey darken-4" type="submit" value="Enviar!">
+			</div>
+	</form>
+
+    <footer class="page-footer blue-grey darken-4"> <!-- RODAPE DESKTOP -->
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h5 class="white-text">Crie o Site da Banda</h5>
+            <p class="grey-text text-lighten-4"><i>v.0.91</i></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2017 Copyright oBrunoCabral
+        <a class="grey-text text-lighten-4 right" href="https://www.facebook.com/bruno.cabral.31">Gostou? Eu que fiz!</a>
+        </div>
+      </div>
+    </footer>
+
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<!-- Script de estilização dos Select -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+    		$('select').material_select();
+  		});
+	</script>
+	<!-- Script do calendário -->
+	<script type="text/javascript">
+		$('.datepicker').pickadate({
+    		selectMonths: true, // Creates a dropdown to control month
+    		selectYears: 200 // Creates a dropdown of 15 years to control year
+  		});	
+	</script>
+
+</body>
+</html>
